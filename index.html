@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Weelr</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;300&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- CSS stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style media="screen">
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      font-size: 2.6rem;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    p {
+      color: #8f8f8f;
+      font-weight: bold;
+    }
+
+    .card-body h2 {
+      font-size: 1.4rem;
+    }
+
+    #title {
+      background-color: #B0E0E6;
+      color: #252525;
+      padding-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .container-fluid{
+      padding: 3% 13%;
+    }
+
+    .navbar {
+      padding: 0 0 0.2rem;
+    }
+
+    .nav-item {
+      padding: 0 14px;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+    .download-button {
+      margin: 5% 3% 5% 0;
+    }
+
+    .title-image {
+      width: 45%;
+      transform: rotate(15deg);
+      position: relative;
+      left: 25%;
+    }
+
+  /* features section */
+    #features {
+      padding: 7% 15%;
+      text-align: center;
+      margin: 0px;
+      background-color: #fff;
+      position: relative;
+      bottom: 50px;
+      z-index: 1;
+    }
+
+    .icon {
+      color: #1c4966;
+      margin-bottom: 1.2rem;
+    }
+
+    .icon:hover {
+      color: #3792cb;
+    }
+
+  /* testimonial section */
+
+    #testimonials {
+      text-align: center;
+      background-color: #45b6fe;
+      color: #fff;
+    }
+
+    .carousel-item {
+      padding: 7% 15%;
+    }
+
+
+    .testimonial-image {
+      width: 20%;
+      border-radius: 100px;
+      margin: 20px;
+    }
+
+    #press {
+      background-color: #45b6fe;
+      text-align: center;
+      padding-bottom: 3%;
+    }
+
+    .press-logo {
+      width: 10%;
+      margin: 20px 50px 30px;
+    }
+
+
+  /* Pricing section */
+
+    #pricing {
+      padding: 150px;
+      text-align: center;
+    }
+
+    .pricing-content {
+      padding: 3% 4%;
+    }
+
+    .card-header {
+      color: #1c4966;
+    }
+
+  /* call to action section */
+
+    #cta {
+      background-color: #45b6fe;
+      padding: 7% 15%;
+      text-align: center;
+    }
+
+    .download-icon {
+      font-weight: bold;
+    }
+
+    .find-love {
+      font-size: 2.5rem;
+      line-height: 1.5;
+      font-weight: bolder;
+      padding: 3% 6%;
+      color: #fff;
+    }
+
+  /* Foooter Section */
+
+    #footer {
+      padding: 7% 15%;
+      text-align: center;
+    }
+
+    .social-icon {
+      margin: 20px 20px;
+    }
+
+
+    @media (max-width: 900px) {
+      .title-image{
+        position: relative;
+        transform: rotate(0);
+      }
+      #title {
+        text-align: center;
+        line-height: 1;
+      }
+    }
+
+  </style>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6386c78e76.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+
+
+    <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/weelr.png" alt="Logo" width="90" height="34" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#cta">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Content</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Plans</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <!-- Title -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" col-lg-6">
+          <h1>Book dispatch riders near you.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+
+        <div class="col-lg-6">
+            <img class="title-image" src="images/Weelr Home P.jpg" alt="iphone-mockup">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="text-content col-lg-4">
+        <i class="icon fa-solid fa-mobile-screen-button fa-4x"></i>
+        <h3>Easy to use</h3>
+        <p>Weelr offers you a rider in seconds.</p>
+      </div>
+
+      <div class="text-content col-lg-4">
+        <i class="icon fa-solid fa-truck-fast fa-4x"></i>
+        <h3>Fast delivery</h3>
+        <p>We offer the fastest delivery for your products.</p>
+      </div>
+
+      <div class="text-content col-lg-4">
+        <i class="icon fa-solid fa-wallet fa-4x"></i>
+        <h3>The best prices</h3>
+        <p>We aim to offer the best prices for your package in every city.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Got my order delivered in minutes. Their user interface is so user-friendly and easy to use.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="dog-profile">
+          <em>Reinhard , Abuja </em>
+        </div>
+        <div class="carousel-item">
+          <h2>I got my glasses delivered without any harm with the best discount price.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="lady-profile">
+          <em>Ajose , Lagos </em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Plans -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Client Need</h2>
+    <p>Simple and comfortable plans for your package.</p>
+
+    <div class="row">
+      <div class="pricing-content col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Lightning</h3>
+          </div>
+          <div class="card-body">
+            <h2>Super fast and safe delivery</h2>
+            <p>Accepts multiple deliveries</p>
+            <p>Uses a bike for delivery</p>
+            <p>small sized packages</p>
+            <div class="d-grid gap-2">
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-content col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mini-Van</h3>
+          </div>
+          <div class="card-body">
+            <h2>Fast and super safe delivery</h2>
+            <p>Cost more than Lightning</p>
+            <p>Uses a mini-van for delivery</p>
+            <p>Medium sized packages</p>
+            <div class="d-grid gap-2">
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-content col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Truck</h3>
+          </div>
+          <div class="card-body">
+            <h2>For moving products in bulk</h2>
+            <p>Cost more than other plans</p>
+            <p>Uses a truck for delivery</p>
+            <p>Extremely large packages</p>
+            <div class="d-grid gap-2">
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Place Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <div class="">
+      <h3 class="find-love">Whether you need a package delivered across town or across the country, we've got you covered.</h3>
+      <button type="button" class="download-icon btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+      <button type="button" class="download-icon btn btn-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="">
+      <i class="social-icon fa-brands fa-twitter fa-2x"></i>
+      <i class="social-icon fa-brands fa-dribbble fa-2x"></i>
+      <i class="social-icon fa-brands fa-instagram fa-2x"></i>
+      <i class="social-icon fa-solid fa-envelope fa-2x"></i>
+      <p>© Copyright Weelr</p>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
